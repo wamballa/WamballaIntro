@@ -1,0 +1,20 @@
+# Unity generated folders
+Temp/
+Library/
+
+# Unity generated files
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Visual Studio files
+*.sln
+*.suo
+*.userprefs
+*.csproj
+*.csproj.meta
+*.csproj.user
+
+# Miscellaneous
+Thumbs.db
+.DS_Store
