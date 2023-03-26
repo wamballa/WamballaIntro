@@ -11,6 +11,8 @@ public class LogoSpawner : MonoBehaviour
     public float angle = 10f;
     public bool triggerAutomatically = false;
     public AudioClip audioClip;
+    public AudioSource audioSource;
+
 
     private Rigidbody2D rb;
 
@@ -21,6 +23,7 @@ public class LogoSpawner : MonoBehaviour
         ScaleSpritesToPixelSize();
         if (triggerAutomatically) SpawnLogos();
     }
+
 
     public void SpawnLogos()
     {

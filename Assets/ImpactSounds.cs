@@ -13,7 +13,9 @@ public class ImpactSounds : MonoBehaviour
 
     private void Start()
     {
+        //print(transform.name + " created");
         audioSource = gameObject.GetComponent<AudioSource>();
+        audioSource.volume = 0.00f;
         if (audioSource == null) print("ERROR: no audiosource found");
         if (audioClip == null) print("ERROR: no audioclip found");
         mainCamera = Camera.main;
@@ -25,11 +27,11 @@ public class ImpactSounds : MonoBehaviour
         isVisible = IsObjectVisible();
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (true)
+        if (isVisible)
         {
-            print(gameObject.name + " is visible");
+            //print(gameObject.name + " is visible");
             audioSource.PlayOneShot(audioClip);
         }
     }
